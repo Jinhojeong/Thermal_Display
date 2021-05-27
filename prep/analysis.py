@@ -60,7 +60,7 @@ for idx, feature in enumerate(config.features):
             axis=0
         )
     # pca = PCA(n_components=2)
-    pca = KernelPCA(n_components=3, kernel='linear')
+    pca = KernelPCA(n_components=2, kernel='linear')
     X_r = pca.fit(temp_).transform(temp_)
 
     
